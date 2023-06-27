@@ -19,7 +19,7 @@ The Repository is built using the following technologies:
 
 ## Contributing
 
-We welcome contributions from the community! If you'd like to contribute to the Space Exploration website, please follow these steps:
+We welcome contributions from the community! If you'd like to contribute to the Repository, please follow these steps:
 
 1. Fork this repository to your own GitHub account.
 2. Create a new branch with your changes: `git checkout -b my-new-feature`.
@@ -29,6 +29,6 @@ We welcome contributions from the community! If you'd like to contribute to the 
 
 ## Contact
 
-If you have any questions or issues with the Space Exploration website, please contact us using the contact form on our website or <a href="mailto:chetan.raut2009@gmail.com?subject=Feedback for CSS-Resources">Send email</a>
+If you have any questions or issues with the Repo, please contact us using the contact form on our website or <a href="mailto:chetan.raut2009@gmail.com?subject=Feedback for CSS-Resources">Send email</a>
 
 Thank you for exploring with us!
