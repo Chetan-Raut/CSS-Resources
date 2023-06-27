@@ -1,7 +1,5 @@
 # CSS-Resources
 
-## Getting Started
-
 To get started with CSS Resources, follow these steps:
 
 1. Clone this repository to your local machine.
