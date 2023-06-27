@@ -9,14 +9,6 @@ To get started with CSS Resources, follow these steps:
 3. Navigate to the blog and news sections using the links in the navigation bar.
 4. Use the contact us page to send us any comments or inquiries you may have.
 
-## Technologies Used
-
-The Repository is built using the following technologies:
-
-- HTML5 and CSS3 for the front-end
-- JavaScript and jQuery for interactive features
-- Bootstrap for responsive design
-
 ## Contributing
 
 We welcome contributions from the community! If you'd like to contribute to the Repository, please follow these steps:
@@ -29,6 +21,6 @@ We welcome contributions from the community! If you'd like to contribute to the 
 
 ## Contact
 
-If you have any questions or issues with the Repo, please contact us using the contact form on our website or <a href="mailto:chetan.raut2009@gmail.com?subject=Feedback for CSS-Resources">Send email</a>
+If you have any questions or issues with the Repository, please contact us using the contact form on our website or <a href="mailto:chetan.raut2009@gmail.com?subject=Feedback for CSS-Resources">Send email</a>
 
 Thank you for exploring with us!
