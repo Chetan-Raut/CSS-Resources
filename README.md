@@ -23,7 +23,7 @@ We welcome contributions from the community! If you'd like to contribute to the 
 
 If you have any questions or issues with the Repository, please contact us using the contact form on our website or <a href="mailto:chetan.raut2009@gmail.com?subject=Feedback for CSS-Resources">Send email</a>
 
-## ⭐Show Support 
+## Show Support 
 
 [![Buy Me A Coffee](https://img.shields.io/badge/-Buy%20Me%20A%20Coffee-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/chetanraut)
 
