@@ -19,7 +19,7 @@ We welcome contributions from the community! If you'd like to contribute to the 
 
 ## Contact
 
-If you have any questions or issues with the Repository, please contact us using the contact form on our website or <a href="mailto:chetan.raut2009@gmail.com?subject=Feedback for CSS-Resources">Send email</a>
+If you have any questions or issues with the Repository, Please Contact us <a href="mailto:chetan.raut2009@gmail.com?subject=Feedback for CSS-Resources">Via Email</a>
 
 ## Show Support 
 
