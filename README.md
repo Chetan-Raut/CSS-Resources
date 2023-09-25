@@ -2,11 +2,6 @@
 
 To get started with CSS Resources, follow these steps:
 
-1. Clone this repository to your local machine.
-2. Open the `index.html` file in your web browser to view the homepage.
-3. Navigate to the blog and news sections using the links in the navigation bar.
-4. Use the contact us page to send us any comments or inquiries you may have.
-
 ## Contributing
 
 We welcome contributions from the community! If you'd like to contribute to the Repository, please follow these steps:
