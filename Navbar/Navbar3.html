@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sticky Navbar On Scroll</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        nav {
+            background-color: #FF0F80;
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            transition: background-color 0.3s;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+        }
+        
+        nav ul li {
+            margin-right: 20px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+            color: black;
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        /* Media query for small screens */
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: row;
+            }
+            nav ul li {
+                margin: 10px;
+            }
+        }
+    </style>
+</head> 
+<!-- 
+*added a position: fixed; rule to the nav element to make it stick to the top when scrolling.
+*added a transition effect for the background color of the navbar to make it smoother.
+*used flexbox to center-align the navigation items. -->
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <script>
+        window.onscroll = function() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.querySelector("nav").style.backgroundColor = "#444";
+            } else {
+                document.querySelector("nav").style.backgroundColor = "#333";
+            }
+        };
+    </script>
+</body>
+</html>

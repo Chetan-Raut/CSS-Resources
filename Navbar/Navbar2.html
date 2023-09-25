@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Navbar with Dropdown</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #20A39E;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            height: 5vh;
+            padding-top: 5%;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #20A39E;
+            z-index: 1;
+            left: 0;
+            top: 100%;
+        }
+
+        /* Styles for the table */
+        table {
+            border: 1px solid #000;
+            background-color: #20A39E;
+            color: #fff;
+            margin-top: 20%;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+    </style>
+</head>
+<!-- 
+.dropdown:This class defines the styling for an element that serves as a dropdown container.It's set to position: relative, which means it will be positioned relative to its normal position in the document flow. This is important for positioning the dropdown content
+.display: inline-block makes the element behave like an inline element but allows you to set a width and height
+.dropdown-content:This class defines the styling for the dropdown content within the dropdown container.position: absolute takes the element out of the normal document flow and positions it relative to the nearest positioned ancestor (in this case, the .dropdown container)
+.z-index: 1 determines the stacking order of elements. It ensures that the dropdown content appears above other elements with lower z-index values
+.left: 0 and top: 100% position the dropdown content at the bottom of the .dropdown container, precisely below it. -->
+<body>
+    <nav> 
+        <ul> 
+            <li><a href="#">Home</a></li> 
+            <li><a href="#">About</a></li>
+            <li class="dropdown"> 
+                <a href="#" onclick="toggleDropdown()">Services &#9662;</a> 
+                <div class="dropdown-content" id="dropdown-content"> 
+                    <!-- The table with Service 1 and Service 2 -->
+                    <table>
+                        <tr>
+                            <th>Service 1</th>
+                            <th>Service 2</th>
+                        </tr>
+                    </table>
+                </div>
+            </li> 
+            <li><a href="#">Contact</a></li> 
+        </ul>
+    </nav>
+
+    <script>
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdown-content");
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
