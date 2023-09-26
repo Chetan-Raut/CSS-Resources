@@ -1,7 +1,5 @@
 # CSS-Resources
 
-To get started with CSS Resources, follow these steps:
-
 ## Contributing
 
 We welcome contributions from the community! If you'd like to contribute to the Repository, please follow these steps:
