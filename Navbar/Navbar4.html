@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Off-Canvas Sidebar Webpage</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- styles.css -->
+    <style>
+ * {
+     margin: 0;
+     padding: 0;
+   }
+       
+body {
+     background-color: #34435E;
+   }
+       
+  /* Sidebar styles */
+  .offcanvas {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #6369D1;
+    padding-top: 20px;
+    transition: left 0.5s;
+    z-index: 1;
+}
+.offcanvas ul {
+    list-style-type: none;
+    padding: 0;
+}
+.offcanvas li {
+    margin-bottom: 10px;
+}
+.offcanvas a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Styles for the content area */
+.content {
+    margin-left: 0;
+    transition: margin-left 0.5s;
+    z-index: 0;
+    text-align: center;
+    padding-top: 100px;
+}
+.content-text {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.logo {
+    width: auto;
+    height: 15vh;
+    margin-bottom: 20px;
+}
+
+/* Copyright styles */
+footer p{
+    text-align: center;    
+}
+.copyright {
+    font-size: 14px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 1rem;
+}
+    </style>
+</head>
+<!-- Sidebar and Content:The main content is divided into two sections: the sidebar and the main content area.The sidebar is initially hidden (left: -250px) and can be opened and closed by clicking the "three lines" button.
+JavaScript:JavaScript functions openSidebar() and closeSidebar() control the opening and closing of the sidebar.When the sidebar is opened, the "three lines" button is hidden (display: none) to prevent overlap.Title: -->
+<body>
+   <div class="open-button" id="openButton" onclick="openSidebar()">
+        <i class="fas fa-bars" style="font-size: 2rem; margin: 5%;"></i>
+    </div>
+    <div class="offcanvas" id="myOffcanvas">
+        <!-- Close button at the top right -->
+        <div class="close-button" onclick="closeSidebar()">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <!-- Off-canvas sidebar content -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="content" id="main-content">
+        <!-- Logo -->
+        <img src="https://i.imgur.com/sbXkCut.png" alt="Logo" class="logo">
+
+        <!-- Content -->
+        <div class="content-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at facilisis odio. Integer non neque nec arcu euismod varius.</p>
+        </div>
+        <button class="button">Learn More</button>
+
+        <!-- Copyright notice -->
+        <footer>
+            <p class="copyright">&copy; 2023 Your Company Name. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function openSidebar() {
+            document.getElementById("myOffcanvas").style.left = "0";
+            document.getElementById("openButton").style.display = "none"; // Hide the "three lines" button
+        }
+
+        function closeSidebar() {
+            document.getElementById("myOffcanvas").style.left = "-250px";
+            document.getElementById("openButton").style.display = "block"; // Show the "three lines" button
+        }
+    </script>
+</body>
+</html>
