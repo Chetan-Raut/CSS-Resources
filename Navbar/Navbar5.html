@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sticky Navbar I</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+    * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }       
+    body {
+     background-color: #34435E;
+   }   
+    nav {
+    background: linear-gradient(#007BFF, #00FFFF); /* Blue gradient */
+    position: sticky;
+    top: 0;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }   
+   nav ul {
+    list-style: none;
+    padding: 0;
+    }
+   nav ul li {
+       display: inline;
+       margin: 1rem;
+    }
+   nav ul li a {
+      font-size: 0.8rem;
+      color: #FFFFFF; /* White text color */
+      text-decoration: none;
+      font-weight: bold; 
+   }
+   nav ul li a:hover {
+      text-decoration: underline;
+      color: black; /* Blue text color on hover */
+   }
+ /* Media query for screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+  nav ul li a {
+    font-size: 0.8rem; 
+  }
+}
+
+@media (max-width: 320px) {
+  nav ul li a {
+    font-size: 0.5rem; 
+  }
+}
+
+/* Media query for screens between 769px and 1024px (typical tablets) */
+@media (min-width: 769px){
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+    nav ul li a {
+    font-size: 1.8rem; 
+  }
+}
+  </style>
+</head>
+<!-- This is a CSS code snippet for styling a navigation bar. It uses a linear gradient background that transitions from #007BFF to #00FFFF, creating a blue gradient effect. The `position: sticky;` property makes the navigation bar stick to the top of the viewport when scrolling. It has a height of 70 pixels and uses flexbox to horizontally center its content both vertically and horizontally. -->
+<body>    
+      <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul> 
+      </nav>
+</body>
+</html>
